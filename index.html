@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Theo Bessel</title>
+</head>
+<body>
+    <input type="radio" id="index_tab" name="tab" checked>
+    <input type="radio" id="projects_tab" name="tab">
+    <input type="radio" id="professional_tab" name="tab">
+
+    <nav>
+        <ul>
+            <li>
+                <label id="index_label" for="index_tab">Index</label>
+            </li>
+            <li>
+                <label id="projects_label" for="projects_tab">Projets</label>
+            </li>
+            <li>
+                <label id="professional_label" for="professional_tab">Projet professionnel</label>
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Theo Bessel</h1>
+        Élève ingénieur en informatique à l'N7, Toulouse INP
+    </header>
+
+    <main>
+        <section id="index_page">
+            <h2>Index</h2>
+            <section id="about_section">
+                <h3>À propos</h3>
+                <p>Depuis que j'ai découvert la programmation informatique à l'école secondaire,
+                    j'ai développé ma curiosité dans ce domaine.</p>
+                <p>C'est cette curiosité qui m'a amené à poursuivre des études d'ingénieur en
+                    informatique à l'ENSEEIHT, après trois années de classes préparatoires aux
+                    grandes écoles au Lycée Kléber de Strasbourg.</p>
+                <p>Ce parcours m'a également permis de développer mes soft skills, tant au niveau de
+                    l'aide aux autres étudiants que dans les différentes associations sportives
+                    auxquelles j'ai contribué.</p>
+            </section>
+            <section id="interest_section">
+                <h3>Centres d'intérêts</h3>
+                <ul>
+                    <li>
+                        <em>Ingénierie logicielle :</em>
+                        <ul>
+                            <li>-> Méthodes formelles</li>
+                            <li>-> Métaprogrammation</li>
+                            <li>-> Vérification et validation logicielle</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <em>Ingénierie des systèmes embarqués :</em>
+                        <ul>
+                            <li>-> Logiciel embarqué</li>
+                            <li>-> Systèmes critiques</li>
+                            <li>-> Informatique temps réel</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </section>
+
+        <section id="projects_page">
+            <h2>Projets</h2>
+            <section id="projects_section">
+                <article>
+                    <h3>Stacktrace ARMv7</h3>
+                    <div class="project_content">
+                        Ce projet est un projet que j'ai réalisé dans le cadre du développement du
+                        système de vol du projet TOLOSAT.
+                        Mon but étant de développer une politique de FDIR (Fault Detection,
+                        Isolation and Recovery) afin de traiter les erreurs du système de vol de
+                        manière robuste. Je me suis alors penché sur le développement d'une
+                        stacktrace pour ARMv7 qui permet de récupérer une liste des appels de
+                        fonctions, par exemple lors d'une erreur.
+                    </div>
+                    <form action="https://fdir.theobessel.fr">
+                        <button type="submit">En savoir plus</button>
+                    </form>
+                </article>
+            </section>
+        </section>
+
+        <section id="professional_page">
+            <h2>Projet professionnel</h2>
+            <section id="mobility_section">
+                <h3>Mobilité internationale</h3>
+                <p>Je vais réaliser une mobilité à l'international dans le cadre que j'ai obtenu au
+                    Centre Européen de Recherche et de Technologie Spatiales (ESTEC) de l'Agence
+                    Spatiale Européenne (ESA). Ce stage durera 6 mois de Juillet à Décembre 2025 et
+                    portera sur le développement de méthodes de vérification et validation pour les
+                    systèmes embarqués.</p>
+                <div class="button_list">
+                    <form action="./TheoBessel_CV.pdf" target="_blank">
+                        <button type="submit">Mon CV</button>
+                    </form>
+                    <form action="./TheoBessel_CoverLetterESA.pdf" target="_blank">
+                        <button type="submit">Ma lettre de motivation</button>
+                    </form>
+                </div>
+            </section>
+            <section id="association_section">
+                <h3>Engagement associatif</h3>
+                <p>J'ai eu l'occasion, grâce à mon école de bénéficier de la formation d'initiateur
+                    escalade SAE (Structures Artificielle d'Escalade).
+                    Suite à cette formation je suis devenu moniteur d'escalade dans le club
+                    d'escalade du groupe INP Toulouse dont je suis également le président.</p>
+                <p>Je suis aussi un membre actif de net7, l'association d'informatique de mon école.
+                    Grâce à cette dernière j'ai eu l'opportunité de participer en tant que bénévole
+                    au Capitole du Libre et à la Toulouse Hacking Convention.
+                    J'ai également pu proposer une formation d'introduction à l'outil Git à
+                    destination des élèves de premières années de l'école.
+                </p>
+                <div class="button_list">
+                    <form action="https://net7.dev">
+                        <button type="submit">Site de net7</button>
+                    </form>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        Copyright (C) 2024 - Théo BESSEL
+    </footer>
+</body>
+</html>
